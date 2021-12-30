@@ -225,6 +225,19 @@ nav {
     
 }
 
+.statusCardSubtitle {
+    
+    border-bottom: solid 1px #3383A8;
+    
+}
+
+.statusCardSubtitle span {
+    font-weight: 600;
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: left;
+}
+
 .statusScrollBtns {
     text-align: right;
     font-size: 20px;
