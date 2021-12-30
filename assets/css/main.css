@@ -166,6 +166,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 
 
@@ -195,13 +196,22 @@ nav {
 #statusRow {
     /* border: solid 4px black; */
     background-color: #F5F9FA;
+    
    
+    
+}
+
+#statusCardRowCont {
+    position: relative;
+    transition: all 0.5s ease-out;
+    
     
 }
 
 #statusCardRow {
     display: flex;
-    overflow-x: auto;
+    
+    
     
 }
 
@@ -210,5 +220,28 @@ nav {
     height: 200px;
     background-color: teal;
     margin: 20px;
+    
+}
+
+.statusScrollBtns {
+    text-align: right;
+    font-size: 20px;
+    right: 5%;
+    
+    
+    
+}
+.statusScrollBtns button {
+    border: none;
+    background: transparent;
+    padding: 0;
+    
+}
+
+.statusScrollBtns i {
+    background-color: #3383A8;
+    padding: 4px 8px;
+    color: white;
+    
     
 }
