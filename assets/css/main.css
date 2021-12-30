@@ -80,6 +80,23 @@
     line-height: 60px;
 }
 
+.sidebar li.profile {
+    position: fixed;
+    height: 60px;
+    width: 78px;
+    left: 0;
+    bottom: -8px;
+    padding: 10px 14px;
+    
+
+}
+
+.sidebar li.profile i {
+    /* color: white;
+    background-color: #46B3E5;  */
+
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
