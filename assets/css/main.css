@@ -3,12 +3,19 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.container-fluid {
 
     border: solid 4px blue;
 }
 
 
-.container .row{
+.container-fluid .row{
     border: solid 4px black;
+}
+
+#statusCard {
+    width: 125px;
+    height: 200px;
+    background-color: teal;
+    margin: 20px;
 }
