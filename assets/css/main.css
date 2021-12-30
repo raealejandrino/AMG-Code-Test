@@ -7,6 +7,7 @@
     height: 100%;
     width: 80px;
     background-color: white;
+    padding: 6px 14px;
     transition: all 0.5s ease;
     z-index: 999;
 }
@@ -38,14 +39,46 @@
     transition: all 0.5s ease;
 }
 
-.mainLogo svg {
+.sidebar .mainLogo svg {
     position: relative;
-    width: 80px;
-    height: 50px;
-    left: 17px;
+    width: 100px;
+    
+    
 }
 
+.sidebar .nav-list {
+    margin-top: 20px;
+    padding: 0;
+    
+}
 
+.sidebar li {
+    position: relative;
+    margin: 8px 0;
+    list-style: none;
+}
+
+.sidebar li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sidebar li a .link_name {
+    opacity: 0;
+}
+
+.sidebar li i {
+    color: #46B3E5;
+    height: 60px;
+    font-size: 28px;
+    min-width: 50px;
+    text-align: center;
+    line-height: 60px;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
