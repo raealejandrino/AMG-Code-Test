@@ -141,7 +141,7 @@
     display: flex;
     flex-direction: column;
     width: 160px;
-    margin-left: 10px;
+    margin-left: 12px;
     opacity: 1;
 }
 
@@ -154,6 +154,7 @@
 .sidebar.open li.profile .profileLinks span {
     color: #46B3E5;
     font-weight: 600;
+    font-size: 16px;
 }
 
 .sidebar.open li.profile .profileLinks div a {
@@ -177,26 +178,37 @@ nav {
 
 .container-fluid {
     padding: 0;
-    border: solid 4px blue;
+    /* border: solid 4px blue; */
     position: relative;
     left: 80px;
+    
 }
 
 
 .container-fluid .row{
-    border: solid 4px red;
+    /* border: solid 4px red; */
     margin: 10px 0px;
-    background-color: rgb(221, 230, 235);
+    
 }
 
+
 #statusRow {
-    border: solid 4px black;
+    /* border: solid 4px black; */
+    background-color: #F5F9FA;
+   
+    
+}
+
+#statusCardRow {
+    display: flex;
+    overflow-x: auto;
     
 }
 
 #statusCard {
-    width: 125px;
+    min-width: 200px;
     height: 200px;
     background-color: teal;
     margin: 20px;
+    
 }
