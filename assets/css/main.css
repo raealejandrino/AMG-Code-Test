@@ -4,13 +4,20 @@ body {
 }
 
 .container-fluid {
-
+    padding: 0;
     border: solid 4px blue;
 }
 
 
 .container-fluid .row{
+    border: solid 4px red;
+    margin: 10px 0px;
+    background-color: rgb(221, 230, 235);
+}
+
+#statusRow {
     border: solid 4px black;
+    
 }
 
 #statusCard {
