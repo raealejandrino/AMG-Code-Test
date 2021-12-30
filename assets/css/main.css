@@ -1,9 +1,4 @@
 @import url('https://fonts.google.com/specimen/Poppins#standard-styles');
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-
 .sidebar {
     position: fixed;
     border-right: solid 3px rgb(108, 175, 219);
@@ -12,9 +7,17 @@ body {
     height: 100%;
     width: 80px;
     background-color: grey;
+    transition: all 0.5s ease;
     z-index: 999;
 }
 
+.sidebar.open {
+    width: 200px;
+}
+
+.sidebar.open #btn {
+    left: 188px;
+}
 
 
 .sidebar #btn{
@@ -32,8 +35,16 @@ body {
     
     text-align: center;
     line-height: 20px;
-   
+    transition: all 0.5s ease;
 }
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
 
 nav {
     position: relative;
