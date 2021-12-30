@@ -2,3 +2,13 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.container {
+
+    border: solid 4px blue;
+}
+
+
+.container .row{
+    border: solid 4px black;
+}
