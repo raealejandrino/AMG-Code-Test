@@ -4,13 +4,14 @@ let btn = document.querySelector('#btn');
 let currentScrollPosition = 0;
 let scrollAmount = 320;
 
-const sCont = document.querySelector("#statusCardRowCont");
-const hScroll = document.querySelector("#statusCardRow");
+
+// const hScroll = document.querySelector("#statusCardRow");
 
 
-let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
+// let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
 
-const scrollHorizontally = val => {
+const scrollHorizontally = (val, rowElement) => {
+    const sCont = document.querySelector("#" + rowElement);
     currentScrollPosition += (val * scrollAmount);
 
     if (currentScrollPosition > 0) {
