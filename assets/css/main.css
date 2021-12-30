@@ -13,11 +13,11 @@
 }
 
 .sidebar.open {
-    width: 200px;
+    width: 225px;
 }
 
 .sidebar.open #btn {
-    left: 188px;
+    left: 213px;
 }
 
 
@@ -50,7 +50,7 @@
     position: absolute;
     width: 100px;
     margin-top: 10px;
-    transition: all 0.2s ease;
+    transition: all 0.2s ;
     
     
 }
@@ -59,7 +59,7 @@
     position: absolute;
     width: 125px;
     opacity: 0;
-    transition: all 0.2s ease;
+    transition: all 0.2s ;
 }
 
 .sidebar.open .closedLogo {
@@ -92,27 +92,73 @@
 }
 
 .sidebar li a .link_name {
+    color: #292B2D;
+    font-size: 15px;
+    white-space: nowrap;
     opacity: 0;
+    transition: 0.3s;
+}
+
+.sidebar.open li a .link_name {
+    opacity: 1;
 }
 
 .sidebar li i {
     color: #46B3E5;
-    height: 60px;
-    font-size: 28px;
+    height: 40px;
+    font-size: 24px;
     min-width: 50px;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
 }
 
 .sidebar li.profile {
+    /* display: flex;
+    flex-direction: column; */
     position: fixed;
     height: 60px;
     width: 78px;
     left: 0;
     bottom: -8px;
     padding: 10px 14px;
+    transition: all 0.5s ease;
     
 
+}
+
+.sidebar li.profile .profileLinks {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.sidebar.open li.profile {
+    bottom: 50px;
+    white-space: nowrap;
+}
+
+
+.sidebar.open li.profile .profileLinks {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.sidebar.open li.profile .profileLinks div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.sidebar.open li.profile .profileLinks span {
+    color: #46B3E5;
+    font-weight: 600;
+}
+
+.sidebar.open li.profile .profileLinks div a {
+    width: auto;
+    text-decoration: underline;
 }
 
 
