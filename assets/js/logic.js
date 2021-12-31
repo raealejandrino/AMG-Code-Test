@@ -1,5 +1,7 @@
 let sidebar = document.querySelector('.sidebar');
 let btn = document.querySelector('#btn');
+let expandBtn = document.querySelector('.seeAllBtn');
+
 
 let currentScrollPosition = 0;
 let scrollAmount = 320;
@@ -25,6 +27,11 @@ const scrollHorizontally = (val, rowElement) => {
 btn.addEventListener("click", () => {
     sidebar.classList.toggle('open');
     btnIconChange();
+});
+
+expandBtn.addEventListener("click", () => {
+    console.log(event.target.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0]);
+    event.target.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].classList.toggle('expand');
 });
 
 const btnIconChange = () => {

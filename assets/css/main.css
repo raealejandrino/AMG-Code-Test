@@ -168,7 +168,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -195,6 +195,12 @@ nav {
 }
 
 
+.seeAllBtn {
+    margin-left: 10px;
+    text-decoration: underline;
+    color: #3383A8;
+}
+
 #statusRow {
     /* border: solid 4px black; */
     background-color: #F5F9FA;
@@ -215,6 +221,10 @@ nav {
     
     
     
+}
+
+#statusCardRow.expand {
+    flex-wrap: wrap;
 }
 
 #statusCard {
