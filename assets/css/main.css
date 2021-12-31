@@ -219,6 +219,7 @@ nav {
 
 #statusCard {
     min-width: 295px;
+    max-width: 295px;
     height: 290px;
     background-color: white;
     margin: 20px;
@@ -264,7 +265,7 @@ nav {
 
 .statusCardDesc span {
     font-size: 13px;
-    font-weight: lighter;
+    font-weight: 100;
     line-height: 24px;
 }
 
