@@ -37,6 +37,7 @@
     text-align: center;
     line-height: 19px;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .sidebar .mainLogo {
@@ -53,6 +54,7 @@
     transition: all 0.2s ;
     
     
+    
 }
 
 .sidebar .mainLogo .openLogo {
@@ -64,10 +66,12 @@
 
 .sidebar.open .closedLogo {
     opacity: 0;
+    
 }
 
 .sidebar.open .openLogo {
     opacity: 1;
+    
 }
 
 .sidebar .nav-list {
@@ -177,6 +181,75 @@ body {
 nav {
     position: relative;
     left: 80px;
+    padding: 20px;
+    width: 96%;
+}
+
+nav div {
+    margin: 0 30px;
+}
+
+.mainTitle {
+    line-height: 25px;
+}
+.mainTitle span{
+    color:#46B3E5;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+.navSearch i {
+    font-size: 28px;
+}
+
+.navSearch input {
+    padding: 10px;
+    border: solid 3px #A0A0A0;
+}
+
+.navSearch a {
+    text-align: right;
+    text-decoration: underline;
+    color: #3383A8;
+}
+
+.dropdown button {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.dropdown-menu {
+    box-shadow: 1px 5px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #3383A8;
+    font-size: 12px;
+}
+
+
+.container.red {
+    border-left: solid 5px red;
+}
+
+.container.red .statusCardCounts {
+    margin-top: 26px!important;
+}
+
+.container.red div.red {
+    color: red!important;
+}
+
+.container.red div.red i {
+    color: red!important;
+}
+
+.specialRed {
+    color: red;
+    font-weight: 600!important;
 }
 
 .container-fluid {
@@ -195,10 +268,25 @@ nav {
 }
 
 
+
+
+.statusRowTitle {
+    color: #46B3E5;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.statusRowTitle i {
+    color: #292B2D;
+}
+
 .seeAllBtn {
     margin-left: 10px;
     text-decoration: underline;
     color: #3383A8;
+    font-size: 14px;
+    font-weight: lighter;
+    cursor: pointer;
 }
 
 #statusRow {

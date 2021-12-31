@@ -11,6 +11,7 @@
     <title>Dashboard | Campaign Manager</title>
 </head>
 <body>
+    
 
 
     <div class="sidebar">
@@ -114,9 +115,24 @@
     <nav>
         
         <div class="row justify-content-between">
-            <div class="col-3">Lorem</div>
-            <div class="col-3">Lorem</div>
+            <div class="d-flex flex-column mainTitle">
+                <span>Dashboard</span>
+                CAMPAIGN MANAGER
+            </div>
+            <div class="d-flex flex-column navSearch">
+                <span class="d-flex flex-nowrap align-items-center">
+                    <i class="fas fa-search m-2"></i>
+                    <input type="search" placeholder="search" />
+
+                </span>
+                <a href="#">
+                    Advanced Search
+
+                </a>
+                
+            </div>
         </div>
+        
         
     </nav>
 
@@ -132,8 +148,10 @@
                     <!-- Status row title -->
                     <div class="col-12">
                         <div class="row justify-content-between">
-                            <div class="col-3">
-                                Favorites <span class="seeAllBtn">See All</span>
+                            <div class="col-3 statusRowTitle">
+                                <i class="far fa-star"></i>
+                                Favorites 
+                                <span class="seeAllBtn">See All</span>
                             </div>
                             <div class="col-3 statusScrollBtns">
                                 
@@ -156,7 +174,148 @@
                                             AVI1958872W - Ended
                                         </span>
                                     
-                                    <i class="fas fa-ellipsis-v"></i>
+                                    <div class="dropdown">
+                                        <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                            
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                            <a class="dropdown-item" href="#">View Campaign Details</a>
+                                            <a class="dropdown-item" href="#">Edit Campaign</a>
+                                            <a class="dropdown-item" href="#">View Submissions</a>
+                                            <a class="dropdown-item" href="#">Download Submissions</a>
+                                            <a class="dropdown-item" href="#">Remove Favorite</a>
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row statusCardCat">
+                                    <span>
+
+                                        <i class="fas fa-project-diagram"></i>
+                                        1
+                                    </span>
+
+                                    Loyalty
+                                </div>
+                                <div class="row statusCardDesc">
+                                    <span>
+                                        Wine Cooler Loyalty Program
+                                    </span>
+                                    <span>
+                                        winecoolerdeal.com
+                                    </span>
+                                    <span>
+                                        06/01/2020 - 07/15/2021
+                                    </span>
+                                </div>
+                                <div class="row justify-content-around statusCardCounts">
+                                    <div>
+                                        <i class="fas fa-tshirt"></i>
+                                        234
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-tshirt"></i>
+                                        22
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-tshirt"></i>
+                                        42
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-tshirt"></i>
+                                        91
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="container red" id="statusCard">
+                                <div class="row justify-content-between statusCardSubtitle">
+                                    
+                                        <span>
+                                            AVI1958872W - Ended
+                                        </span>
+                                    
+                                        <div class="dropdown">
+                                            <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">View Campaign Details</a>
+                                                <a class="dropdown-item" href="#">Edit Campaign</a>
+                                                <a class="dropdown-item" href="#">View Submissions</a>
+                                                <a class="dropdown-item" href="#">Download Submissions</a>
+                                                <a class="dropdown-item" href="#">Remove Favorite</a>
+    
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="row statusCardCat">
+                                    <span>
+
+                                        <i class="fas fa-project-diagram"></i>
+                                        1
+                                    </span>
+
+                                    Loyalty
+                                </div>
+                                <div class="row statusCardDesc">
+                                    <span>
+                                        Wine Cooler Loyalty Program
+                                    </span>
+                                    <span>
+                                        winecoolerdeal.com
+                                    </span>
+                                    <span class="specialRed">
+                                        $1500 Max Redemption
+                                    </span>
+                                    <span>
+                                        06/01/2020 - 07/15/2021
+                                    </span>
+                                </div>
+                                <div class="row justify-content-around statusCardCounts">
+                                    <div>
+                                        <i class="fas fa-tshirt"></i>
+                                        234
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-tshirt"></i>
+                                        22
+                                    </div>
+                                    <div class="red">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                        42
+                                    </div>
+                                    <div>
+                                        <i class="fas fa-tshirt"></i>
+                                        91
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="container" id="statusCard">
+                                <div class="row justify-content-between statusCardSubtitle">
+                                    
+                                        <span>
+                                            AVI1958872W - Ended
+                                        </span>
+                                    
+                                        <div class="dropdown">
+                                            <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">View Campaign Details</a>
+                                                <a class="dropdown-item" href="#">Edit Campaign</a>
+                                                <a class="dropdown-item" href="#">View Submissions</a>
+                                                <a class="dropdown-item" href="#">Download Submissions</a>
+                                                <a class="dropdown-item" href="#">Remove Favorite</a>
+    
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="row statusCardCat">
                                     <span>
@@ -205,7 +364,20 @@
                                             AVI1958872W - Ended
                                         </span>
                                     
-                                    <i class="fas fa-ellipsis-v"></i>
+                                        <div class="dropdown">
+                                            <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">View Campaign Details</a>
+                                                <a class="dropdown-item" href="#">Edit Campaign</a>
+                                                <a class="dropdown-item" href="#">View Submissions</a>
+                                                <a class="dropdown-item" href="#">Download Submissions</a>
+                                                <a class="dropdown-item" href="#">Remove Favorite</a>
+    
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="row statusCardCat">
                                     <span>
@@ -254,7 +426,20 @@
                                             AVI1958872W - Ended
                                         </span>
                                     
-                                    <i class="fas fa-ellipsis-v"></i>
+                                        <div class="dropdown">
+                                            <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">View Campaign Details</a>
+                                                <a class="dropdown-item" href="#">Edit Campaign</a>
+                                                <a class="dropdown-item" href="#">View Submissions</a>
+                                                <a class="dropdown-item" href="#">Download Submissions</a>
+                                                <a class="dropdown-item" href="#">Remove Favorite</a>
+    
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="row statusCardCat">
                                     <span>
@@ -303,7 +488,20 @@
                                             AVI1958872W - Ended
                                         </span>
                                     
-                                    <i class="fas fa-ellipsis-v"></i>
+                                        <div class="dropdown">
+                                            <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">View Campaign Details</a>
+                                                <a class="dropdown-item" href="#">Edit Campaign</a>
+                                                <a class="dropdown-item" href="#">View Submissions</a>
+                                                <a class="dropdown-item" href="#">Download Submissions</a>
+                                                <a class="dropdown-item" href="#">Remove Favorite</a>
+    
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="row statusCardCat">
                                     <span>
@@ -352,105 +550,20 @@
                                             AVI1958872W - Ended
                                         </span>
                                     
-                                    <i class="fas fa-ellipsis-v"></i>
-                                </div>
-                                <div class="row statusCardCat">
-                                    <span>
-
-                                        <i class="fas fa-project-diagram"></i>
-                                        1
-                                    </span>
-
-                                    Loyalty
-                                </div>
-                                <div class="row statusCardDesc">
-                                    <span>
-                                        Wine Cooler Loyalty Program
-                                    </span>
-                                    <span>
-                                        winecoolerdeal.com
-                                    </span>
-                                    <span>
-                                        06/01/2020 - 07/15/2021
-                                    </span>
-                                </div>
-                                <div class="row justify-content-around statusCardCounts">
-                                    <div>
-                                        <i class="fas fa-tshirt"></i>
-                                        234
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-tshirt"></i>
-                                        22
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-tshirt"></i>
-                                        42
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-tshirt"></i>
-                                        91
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="container" id="statusCard">
-                                <div class="row justify-content-between statusCardSubtitle">
-                                    
-                                        <span>
-                                            AVI1958872W - Ended
-                                        </span>
-                                    
-                                    <i class="fas fa-ellipsis-v"></i>
-                                </div>
-                                <div class="row statusCardCat">
-                                    <span>
-
-                                        <i class="fas fa-project-diagram"></i>
-                                        1
-                                    </span>
-
-                                    Loyalty
-                                </div>
-                                <div class="row statusCardDesc">
-                                    <span>
-                                        Wine Cooler Loyalty Program
-                                    </span>
-                                    <span>
-                                        winecoolerdeal.com
-                                    </span>
-                                    <span>
-                                        06/01/2020 - 07/15/2021
-                                    </span>
-                                </div>
-                                <div class="row justify-content-around statusCardCounts">
-                                    <div>
-                                        <i class="fas fa-tshirt"></i>
-                                        234
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-tshirt"></i>
-                                        22
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-tshirt"></i>
-                                        42
-                                    </div>
-                                    <div>
-                                        <i class="fas fa-tshirt"></i>
-                                        91
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="container" id="statusCard">
-                                <div class="row justify-content-between statusCardSubtitle">
-                                    
-                                        <span>
-                                            AVI1958872W - Ended
-                                        </span>
-                                    
-                                    <i class="fas fa-ellipsis-v"></i>
+                                        <div class="dropdown">
+                                            <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">View Campaign Details</a>
+                                                <a class="dropdown-item" href="#">Edit Campaign</a>
+                                                <a class="dropdown-item" href="#">View Submissions</a>
+                                                <a class="dropdown-item" href="#">Download Submissions</a>
+                                                <a class="dropdown-item" href="#">Remove Favorite</a>
+    
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="row statusCardCat">
                                     <span>
@@ -504,8 +617,10 @@
                    <!-- Status row title -->
                    <div class="col-12">
                     <div class="row justify-content-between">
-                        <div class="col-3">
-                            Currently Live <span class="seeAllBtn">See All</span>
+                        <div class="col-3 statusRowTitle">
+                            <i class="far fa-calendar-alt"></i>
+                            Currently Live 
+                            <span class="seeAllBtn">See All</span>
                         </div>
                         <div class="col-3 statusScrollBtns">
                             
@@ -528,7 +643,20 @@
                                             AVI1958872W - Ended
                                         </span>
                                     
-                                    <i class="fas fa-ellipsis-v"></i>
+                                        <div class="dropdown">
+                                            <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">View Campaign Details</a>
+                                                <a class="dropdown-item" href="#">Edit Campaign</a>
+                                                <a class="dropdown-item" href="#">View Submissions</a>
+                                                <a class="dropdown-item" href="#">Download Submissions</a>
+                                                <a class="dropdown-item" href="#">Remove Favorite</a>
+    
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="row statusCardCat">
                                     <span>
@@ -577,7 +705,20 @@
                                             AVI1958872W - Ended
                                         </span>
                                     
-                                    <i class="fas fa-ellipsis-v"></i>
+                                        <div class="dropdown">
+                                            <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">View Campaign Details</a>
+                                                <a class="dropdown-item" href="#">Edit Campaign</a>
+                                                <a class="dropdown-item" href="#">View Submissions</a>
+                                                <a class="dropdown-item" href="#">Download Submissions</a>
+                                                <a class="dropdown-item" href="#">Remove Favorite</a>
+    
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="row statusCardCat">
                                     <span>
@@ -626,7 +767,20 @@
                                             AVI1958872W - Ended
                                         </span>
                                     
-                                    <i class="fas fa-ellipsis-v"></i>
+                                        <div class="dropdown">
+                                            <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">View Campaign Details</a>
+                                                <a class="dropdown-item" href="#">Edit Campaign</a>
+                                                <a class="dropdown-item" href="#">View Submissions</a>
+                                                <a class="dropdown-item" href="#">Download Submissions</a>
+                                                <a class="dropdown-item" href="#">Remove Favorite</a>
+    
+                                            </div>
+                                        </div>
                                 </div>
                                 <div class="row statusCardCat">
                                     <span>
@@ -674,7 +828,11 @@
             </div>
         </section>
     </main>
-    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="assets/js/logic.js"></script>
 </body>
 </html>
