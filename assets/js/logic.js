@@ -7,11 +7,6 @@ let currentScrollPosition = 0;
 let scrollAmount = 320;
 
 
-// const hScroll = document.querySelector("#statusCardRow");
-
-
-// let maxScroll = -sCont.offsetWidth + hScroll.offsetWidth;
-
 const scrollHorizontally = (val, rowElement) => {
     const sCont = document.querySelector("#" + rowElement);
     currentScrollPosition += (val * scrollAmount);
