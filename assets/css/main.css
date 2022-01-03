@@ -1,4 +1,8 @@
+
+/* POPPINS FONT IMPORT */
 @import url('https://fonts.google.com/specimen/Poppins#standard-styles');
+
+/* SIDEBAR NAV  START */
 .sidebar {
     position: fixed;
     border-right: solid 3px #A7DCF5;
@@ -169,6 +173,8 @@
 }
 
 
+/* SIDEBAR NAV END */
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -177,6 +183,10 @@ body {
 
 
 
+
+
+
+/* MAIN NAV START */
 
 nav {
     position: relative;
@@ -215,6 +225,13 @@ nav div {
     color: #3383A8;
 }
 
+/* MAIN NAV END */
+
+
+
+
+
+/* DATA CARD DROPDOWN START */
 .dropdown button {
     border: none;
     background: transparent;
@@ -230,6 +247,13 @@ nav div {
     font-size: 12px;
 }
 
+/* DATA CARD DROPDOWN END */
+
+
+
+
+
+/* DATA CARD RED HIGHLIGHTED START */
 
 .container.red {
     border-left: solid 5px red;
@@ -252,6 +276,12 @@ nav div {
     font-weight: 600!important;
 }
 
+/* DATA CARD RED HIGHLIGHTED END */
+
+
+
+/* DATA CARD CONTAINER START */
+
 .container-fluid {
     padding: 0;
     /* border: solid 4px blue; */
@@ -267,8 +297,12 @@ nav div {
     
 }
 
+/* DATA CARD CONTAINER END */
 
 
+
+
+/* STATUS ROWS/CARDS START */
 
 .statusRowTitle {
     color: #46B3E5;
@@ -414,3 +448,5 @@ nav div {
     
     
 }
+
+/* STATUS ROWS/CARDS END */
