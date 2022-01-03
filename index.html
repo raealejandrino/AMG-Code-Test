@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONTAWESOME LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP LINK -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/main.css">
-    
     <title>Dashboard | Campaign Manager</title>
 </head>
 <body>
     
 
-
+    <!-- SIDEBAR NAV -->
     <div class="sidebar">
+
         <!-- Open/Close Button -->
         <i class="fas fa-chevron-right" id="btn"></i>
 
         <!-- Main Logo -->
         <div class="mainLogo">
+            <!-- AMG LOGO 1 -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.742 39.188" class="closedLogo">
                 <g id="AMG_2013_4C_logoHR" transform="translate(-55.4 -172.8)">
                   <path id="Path_1" data-name="Path 1" d="M94.587,192.394A19.594,19.594,0,1,1,74.994,172.8a19.6,19.6,0,0,1,19.594,19.594" transform="translate(0 0)" fill="#009ddc"/>
                   <path id="Path_2" data-name="Path 2" d="M121.787,192.394A19.594,19.594,0,1,1,102.194,172.8a19.6,19.6,0,0,1,19.594,19.594" transform="translate(-23.214 0)" fill="#fff"/>
                   <path id="Path_3" data-name="Path 3" d="M151.587,192.394A19.594,19.594,0,1,1,131.994,172.8a19.6,19.6,0,0,1,19.594,19.594" transform="translate(-48.647 0)" fill="#5f6062"/>
                   <path id="Path_4" data-name="Path 4" d="M248.062,266.543c4.03,0,5.789-2.916,5.789-6.39H251.1c-2.359,0-7.064,0-7.064,3.312-.015,2.4,2.066,3.078,4.03,3.078m5.789-1.6h-.088c-.791,2.872-3.195,4.147-6.111,4.147-3.634,0-7.152-1.553-7.152-5.628,0-5.554,5.422-5.862,9.819-5.862h3.517v-1.07c0-2.916-1.524-3.869-4.4-3.869-2.477,0-4.514.513-4.748,3.107h-3.517c.234-4.191,3.913-5.671,7.826-5.671,4.309,0,8.1.923,8.1,5.628v10.42H260.3v2.55h-6.463v-3.752Z" transform="translate(-157.974 -65.972)" fill="#fff"/>
-                  
                 </g>
             </svg>
 
+            <!-- AMG LOGO 2 -->
             <svg xmlns="http://www.w3.org/2000/svg" width="173.077" height="68" viewBox="0 0 173.077 68" class="openLogo">
                 <g id="AMG_2013_4C_logoHR" transform="translate(-55.4 -172.8)">
                   <path id="Path_1" data-name="Path 1" d="M123.4,206.8a34,34,0,1,1-34-34,34.013,34.013,0,0,1,34,34" transform="translate(0 0)" fill="#009ddc"/>
@@ -60,11 +63,9 @@
                   </g>
                 </g>
               </svg>
-              
-              
         </div>
 
-        <!-- Navigation List -->
+        <!-- Sidebar Navigation List -->
         <ul class="nav-list">
             <li>
                 <a href="#">
@@ -105,62 +106,63 @@
                         |
                         <a href="#">Sign Out</a>
                     </div>
-
                 </div>
             </li>
         </ul>
     </div>
 
 
+    <!-- MAIN NAV (w/search bar) -->
     <nav>
-        
         <div class="row justify-content-between">
+
+            <!-- Left side div -->
             <div class="d-flex flex-column mainTitle">
                 <span>Dashboard</span>
                 CAMPAIGN MANAGER
             </div>
+
+            <!-- Right side div (search bar) -->
             <div class="d-flex flex-column navSearch">
                 <span class="d-flex flex-nowrap align-items-center">
                     <i class="fas fa-search m-2"></i>
                     <input type="search" placeholder="search" />
-
                 </span>
                 <a href="#">
                     Advanced Search
-
                 </a>
-                
             </div>
         </div>
         
         
     </nav>
 
-    <main>
 
+    <!-- Status rows -->
+    <main>
         <div class="container-fluid">
-            <!-- Status rows -->
     
             <!-- Favorites -->
             <section id="statusRow">
 
+                <!-- Status row title w/ scroll buttons-->
                 <div class="row">
-                    <!-- Status row title -->
                     <div class="col-12">
                         <div class="row justify-content-between">
                             <div class="col-3 statusRowTitle">
                                 <i class="far fa-star"></i>
                                 Favorites 
+
+                                <!-- Expands status row -->
                                 <span class="seeAllBtn">See All</span>
                             </div>
+
+                            <!-- BUTTONS FOR SCROLL FUNCTIONALITY -->
                             <div class="col-3 statusScrollBtns">
-                                
                                 <button class="btn-scroll" onclick="scrollHorizontally(1, 'statusCardRowCont')"><i class="fas fa-chevron-left"></i></button>
                                 <button class="btn-scroll" onclick="scrollHorizontally(-1, 'statusCardRowCont')"><i class="fas fa-chevron-right"></i></button>
                             </div>
-        
                         </div>
-                        
                     </div>
                 </div>
             
@@ -169,36 +171,41 @@
                         <div id="statusCardRow">
                             <div class="container" id="statusCard">
                                 <div class="row justify-content-between statusCardSubtitle">
+                                    <!-- Data Card Title -->
+                                    <span>
+                                        AVI1958872W - Ended
+                                    </span>
                                     
-                                        <span>
-                                            AVI1958872W - Ended
-                                        </span>
-                                    
+                                    <!-- Dropdown menu -->
                                     <div class="dropdown">
+
+                                        <!-- Sets ellipsis fa icon to button -->
                                         <button  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="fas fa-ellipsis-v"></i>
-                                            
                                         </button>
+
+                                        <!-- Dropdown menu options and href links -->
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                             <a class="dropdown-item" href="#">View Campaign Details</a>
                                             <a class="dropdown-item" href="#">Edit Campaign</a>
                                             <a class="dropdown-item" href="#">View Submissions</a>
                                             <a class="dropdown-item" href="#">Download Submissions</a>
                                             <a class="dropdown-item" href="#">Remove Favorite</a>
-
                                         </div>
                                     </div>
-                                    
                                 </div>
+
+
                                 <div class="row statusCardCat">
                                     <span>
-
                                         <i class="fas fa-project-diagram"></i>
                                         1
                                     </span>
 
                                     Loyalty
                                 </div>
+
+
                                 <div class="row statusCardDesc">
                                     <span>
                                         Wine Cooler Loyalty Program
@@ -210,6 +217,7 @@
                                         06/01/2020 - 07/15/2021
                                     </span>
                                 </div>
+                                
                                 <div class="row justify-content-around statusCardCounts">
                                     <div>
                                         <i class="fas fa-tshirt"></i>
@@ -227,9 +235,10 @@
                                         <i class="fas fa-tshirt"></i>
                                         91
                                     </div>
-                                    
                                 </div>
                             </div>
+
+
                             <div class="container red" id="statusCard">
                                 <div class="row justify-content-between statusCardSubtitle">
                                     
@@ -829,7 +838,7 @@
         </section>
     </main>
 
-
+    <!-- BOOTSTRAP AND LOCAL JAVASCRIPT LINKS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
